@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('dis', 'GeoController@index');
-Route::get('show', 'SoapController@show');
+
 Route::post('/consult','SoapController@consult')->name('consult');
 Route::get('/', function () {
     return view('welcome');
