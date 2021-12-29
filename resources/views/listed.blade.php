@@ -123,34 +123,7 @@
 
                                         @foreach((array)$rates as $ind => $price)
 
-                                            @if($price['CodRate'] == 'AI')
-
-
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="price-table">
-                                                        <div class="price-head">
-                                                            <h4>ALL INCLUSIVE</h4>
-                                                            <h2>{{$price['PriceDay']}}$ <span>Day</span></h2>
-                                                        </div>
-                                                        <div class="price-content">
-                                                            <ul>
-                                                                <li>Combustible</li>
-                                                                <li>Kilometraje</li>
-                                                                <li>Seguro</li>
-                                                                <li>Franquicia</li>
-                                                                <li>Cancelación</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="price-button">
-                                                            <a href="#" class="detail-btn btn"><span>Mas detalles</span><span><img src="images/fleet/key.png" alt=""></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            @elseif(($price['CodRate'] =='FF'))
-
-
-                                                <div class="col-md-6 col-sm-6">
+                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="price-table">
                                                         <div class="price-head">
                                                             <h4>FULL/FULL</h4>
@@ -170,7 +143,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            @endif
+                                        
                                         @endforeach
                                     @endforeach
 
